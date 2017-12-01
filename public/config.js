@@ -8,5 +8,9 @@
       template: `<oxford-component></oxford-component>`,
       controller: "OxfordController"
     })
+    .otherwise("/submit", {
+      template: `<oxford-component></oxford-component>`,
+      controller: "OxfordController"
+    })
   });
 })();
