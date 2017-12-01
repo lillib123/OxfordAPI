@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Actor');
+
+body {
+    background-image: url("images/background.jpg");
+    background-position: center;
+    font-family: 'Actor', sans-serif;
+}
+
+form {
+    background-color: rgba(53, 53, 53, 0.97);
+    color: white;
+    width: 80%;
+    min-width: 320px;
+    min-height: 500px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 42px;
+    width: 90%;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+
+}
+
+button {
+    height: 42px;
+    width: 90%;
+    border: none;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(64, 172, 249);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+}
+
+
+p {
+    display: inline-block;
+    width: 88%;
+    border-bottom: 1px solid rgb(118, 119, 119);
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: normal;
+}
+
+h6 {
+    font-weight: normal;
+}
+
+a {
+    display: none;
+}
+
+@media only screen and (min-width: 425px) {
+    button {
+        transition: 0.5s ease;
+    }
+
+    button:hover {
+    -webkit-box-shadow: 0px 0px 14px 0px #4f4f4f;
+    -moz-box-shadow: 0px 0px 14px 0px #4f4f4f;
+    box-shadow: 0px 0px 14px 0px #4f4f4f;    
+    transition: 0.5s ease;
+}
+
+form {
+    max-width: 500px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+}

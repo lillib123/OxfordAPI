@@ -3,7 +3,6 @@ var router = express.Router();
 var http = require('http');
 var request = require("request");
 
-
 router.get("/tests/:word", function (req, res, next) {
   var word = req.params.word;
   var options = {
@@ -13,17 +12,13 @@ router.get("/tests/:word", function (req, res, next) {
       'app_key': 'b162dc254f30f0d06bbd5232844305da'
     }
   }
-
-  var stuff = {};
+  var requestData = {};
   request(options, function callback(error, response, body) {
-
-    stuff = {
+    requestData = {
       response: response,
       body: JSON.parse(body)
     }
-    res.send(stuff);
+    res.send(requestData);
   });
-
 });
-
 module.exports = router;
